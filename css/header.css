@@ -27,10 +27,10 @@ header{
     font-size: .9rem;
     position: relative;
     z-index: 9;
-    font-family: 'Roboto';
+    font-family: Montserrat;
 }
 .logo{
-    width: 200px;
+    width: 130px;
 }
 .header-menu ul{
     display: flex;
@@ -40,7 +40,7 @@ header{
     margin-left: 17px;
     margin-right: 17px;
     font-size: 1rem;
-    font-family: 'Roboto';
+    font-family: Montserrat;
     letter-spacing: 1px;
     cursor: pointer;
     border-bottom: 1.5px solid transparent;
@@ -78,7 +78,7 @@ header{
     align-items: center;
 }
 .header-navigation-wrapper nav ul li{
-    font-family: Roboto;
+    font-family: Montserrat;
     font-size: 1.1rem;
     text-transform: uppercase;
     color: black;
@@ -111,7 +111,7 @@ header{
     width: 250px;
 }
 .header-banner-title, .header-banner-text{
-    font-family: Roboto;
+    font-family: Montserrat;
     /*margin-bottom: 10px;*/
 }
 .header-banner-text{
@@ -163,7 +163,7 @@ header{
         margin-left: 10px;
         margin-right: 10px;
         font-size: .85rem;
-        font-family: 'Roboto';
+        font-family: Montserrat;
         letter-spacing: 0px;
         cursor: pointer;
     }
@@ -347,10 +347,10 @@ header{
         align-items: center;
         align-content: center;
         color: black;
-        font-family: Roboto;
+        font-family: Montserrat;
     }
     .codrops-demos_sidebar{
-        font-family: Roboto;
+        font-family: Montserrat;
         /*position: absolute;*/
         top: 20%;
         bottom: 20%;
