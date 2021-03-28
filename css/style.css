@@ -167,8 +167,8 @@
 }
 
 .feedback-form_select{
-    width: 441px;
-    height: 50px;
+    width: 448px;
+    height: 56px;
     color: #2B2B2B;
     background-color: white;
     margin-top: 17px;
@@ -215,7 +215,7 @@
     }
 
     .feedback-form_select {
-        width: 300px;
+        width: 308px;
     }
 
     .feedback-form_down textarea {
@@ -285,7 +285,7 @@
     }
 
     .feedback-form_select {
-        width: 260px;
+        width: 268px;
     }
 
 }
