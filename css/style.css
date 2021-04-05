@@ -24,7 +24,7 @@
     margin: 0 auto;
     font-family: Montserrat;
 }
-.header-banner-info p:nth-child(1), p:nth-child(2){
+.header-banner-info p:nth-child(1), .header-banner-info p:nth-child(2){
     font-size: 2.4rem;
 }
 .header-banner-btn{
@@ -40,6 +40,45 @@
 }
 .header-banner-info p:nth-child(3){
     width: 80%;
+}
+.how-work-wrapper{
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    background-position: center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+.how-work-title{
+    font-size: 2rem;
+    font-family: Montserrat;
+    text-transform: uppercase;
+    text-align: center;
+}
+.how-work-info-wrapper{
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 60px;
+    grid-column-gap: 40px;
+}
+.how-work-info{
+    display: flex;
+    align-items: center;
+    font-family: Montserrat;
+    color: white;
+}
+.how-work-number{
+    color: #C31E22;
+    font-size: 1.8rem;
+}
+.how-work-text{
+    font-size: 1rem;
+    margin-left: 20px;
 }
 .advantages-wrapper{
     width: 100%;
@@ -248,8 +287,11 @@
     .header-banner-info{
         width: 85%;
     }
-    .header-banner-info p:nth-child(1), p:nth-child(2){
+    .header-banner-info p:nth-child(1),.header-banner-info p:nth-child(2){
         font-size: 2rem;
+    }
+    .how-work-info-wrapper{
+        width: 80%;
     }
 }
 
@@ -270,6 +312,9 @@
 }
 
 @media (max-width: 640px) {
+    .how-work-info-wrapper{
+        width: 90%;
+    }
 
     .feedback-form_top input {
         width: 180px;
@@ -305,7 +350,7 @@
     .header-banner-info{
         width: 85%;
     }
-    .header-banner-info p:nth-child(1), p:nth-child(2){
+    .header-banner-info p:nth-child(1), .header-banner-info p:nth-child(2){
         font-size: 1.7rem;
     }
     .header-banner-info p:nth-child(3){
@@ -313,9 +358,20 @@
     }
 
 }
-
+@media (max-width: 550px) {
+    .how-work-info-wrapper{
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 70px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row-gap: 60px;
+        grid-column-gap: 40px;
+    }
+}
 
 @media (max-width: 475px) {
+
     .advantages-case_case{
         width: 300px;
         height: 280px;
@@ -344,7 +400,7 @@
     .feedback-form_select {
         width: 268px;
     }
-    .header-banner-info p:nth-child(1), p:nth-child(2){
+    .header-banner-info p:nth-child(1), .header-banner-info p:nth-child(2){
         font-size: 1.5rem;
     }
 
