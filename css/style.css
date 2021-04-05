@@ -590,6 +590,12 @@
         justify-content: space-between;
         align-items: flex-end;
     }
+    .cases-title img{
+        width: 50px;
+    }
+    .cases-title p{
+        font-size: 1.6rem;
+    }
 }
 @media (max-width: 640px) {
     .how-work-info-wrapper{
