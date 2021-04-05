@@ -37,8 +37,8 @@ header{
     align-items: center;
 }
 .header-menu ul li{
-    margin-left: 17px;
-    margin-right: 17px;
+    margin-left: 10px;
+    margin-right: 10px;
     font-size: 1rem;
     font-family: Montserrat;
     letter-spacing: 1px;
@@ -50,16 +50,17 @@ header{
     padding-right: 10px;
 }
 .header-contact-wrapper{
+    color: white;
     display: flex;
     justify-content: center;
     width: 220px;
     height: 50px;
-    border: 2px solid rgba(196, 166, 118, 1);
+    border: 2px solid rgba(195, 30, 34, 1);
     border-radius: 25px;
     cursor: pointer;
+    background-color: rgba(195, 30, 34, 1) ;
 }
 .header-contact-wrapper p{
-    color: black;
     line-height: 50px;
     font-size: 1.1rem;
 }
@@ -91,21 +92,14 @@ header{
 
 
 .header-banner{
-    height: 550px;
+    height: 600px;
     margin: 0 auto;
-    margin-top: 30px;
     margin-bottom: 100px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    background-image: url("../images/header/header_banner.png");
-    background-position: center;
-    /*background-attachment: fixed;*/
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    background-color: rgba(49, 55, 70, 1);
 }
 .header-banner img{
     width: 250px;
@@ -127,66 +121,28 @@ header{
 @media (max-width: 1250px) {
     header {
         width: 1000px;
-        height: 130px;
+        height: 110px;
     }
-    .header-navigation-wrapper nav ul{
+
+    .header-navigation-wrapper nav ul {
         display: flex;
         width: 950px;
         margin: 0 auto;
         justify-content: space-between;
         align-items: center;
     }
-    .header-navigation-wrapper nav ul li{
+
+    .header-navigation-wrapper nav ul li {
         font-size: 1rem;
     }
-}
-@media (max-width: 1024px) {
-    header {
-        width: 760px;
-        height: 100px;
-    }
-    .logo{
-        width: 150px;
-    }
-    .header-contact-wrapper p{
-        margin-top: 5px;
-        margin-bottom: 5px;
-    }
 
-    .laguage-select {
-        display: none;
-    }
-    .header-menu{
-        align-items: center;
-    }
-    .header-menu ul li{
-        margin-left: 10px;
-        margin-right: 10px;
-        font-size: .85rem;
-        font-family: Montserrat;
-        letter-spacing: 0px;
-        cursor: pointer;
-    }
-    .header-contact-wrapper{
-        width: 180px;
-        height: 40px;
-    }
-    .header-contact-wrapper p{
-        line-height: 30px;
-    }
-    .header-navigation-wrapper nav ul{
-        display: flex;
-        width: 700px;
-        margin: 0 auto;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .header-navigation-wrapper nav ul li{
-        font-size: .82rem;
-        text-align: center;
+    .header-menu ul li {
+        margin-left: 7px;
+        margin-right: 7px;
+        font-size: 0.85rem;
     }
 }
-@media (max-width: 769px) {
+@media (max-width: 1050px) {
     .header-menu{
         display: none;
     }
@@ -210,7 +166,7 @@ header{
         margin: 0 auto;
     }
     .header-contact-wrapper{
-        margin-left: 15%;
+        margin-left: 25%;
     }
     .header-menu{
         display: none;
@@ -367,7 +323,7 @@ header{
         height: auto;
         position: absolute;
         left: -80px;
-        top: 22px;
+        top: 30px;
         z-index: 1000;
         cursor: pointer;
     }
@@ -388,6 +344,17 @@ header{
     .codrops-demos_sidebar a.current-demo {
         color: black;
         border-color: black;
+    }
+}
+
+@media (max-width: 860px) {
+    .header-contact-wrapper {
+        margin-left: 20%;
+    }
+}
+@media (max-width: 760px) {
+    .header-contact-wrapper {
+        display: none;
     }
 }
 @media (max-width: 660px){
