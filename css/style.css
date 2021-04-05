@@ -80,6 +80,78 @@
     font-size: 1rem;
     margin-left: 20px;
 }
+.our-tasks-wrapper{
+    width: 100%;
+    background-color: white;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+.our-task-info-wrapper{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 370px;
+    /* padding-top: 100px; */
+    /* padding-bottom: 100px; */
+    background-color: rgba(49, 55, 70, 1);
+    justify-content: space-between;
+}
+.our-task-info{
+    position: relative;
+    width: 55%;
+}
+.our-task-title{
+    position: absolute;
+    top: -170px;
+    left: -40px;
+    font-family: Montserrat;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+.why-we-wrapper{
+    width: 100%;
+    font-family: Montserrat;
+    color: white;
+    font-size: 1rem;
+}
+
+.why-we-img{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+.why-we-img img{
+    width: 90%;
+    max-height: 700px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+.why-we-title{
+    font-size: 1.3rem;
+}
+.why-we-advantages{
+    display: grid;
+    margin-top: 50px;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 5px;
+    grid-row-gap: 40px;
+}
+.why-we-advantage{
+    display: flex;
+}
+.why-we-point{
+    margin-top: 5px;
+    width: 8px;
+    height: 8px;
+    background-color: #C31E22;
+}
+.why-we-text{
+    margin-left: 10px;
+    word-wrap: break-word;
+}
 .advantages-wrapper{
     width: 100%;
 }
@@ -199,7 +271,7 @@
     background-repeat: no-repeat;
     background-position: center;
     padding: 62px 0px;
-    margin-top: 83px;
+    /*margin-top: 83px;*/
 }
 
 .feedback{
@@ -280,6 +352,31 @@
     width: 900px;
     height: 111px;
 }
+@media (max-width: 1300px) {
+    .our-tasks-wrapper{
+        width: 100%;
+        background-color: white;
+        padding-top: 150px;
+        padding-bottom: 150px;
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .our-task-title {
+        position: absolute;
+        top: -150px;
+        left: -20px;
+        font-family: Montserrat;
+        font-size: 1.6rem;
+        font-weight: 500;
+    }
+    .why-we-img img {
+        width: 90%;
+        height: 560px;
+        max-height: 700px;
+        max-width: 500px;
+    }
+}
 @media (max-width: 1200px) {
     .header-banner-block{
         width: 85%;
@@ -296,7 +393,24 @@
 }
 
 @media (max-width: 900px) {
-
+    .our-task-title {
+        top: -145px;
+        left: -20px;
+        font-size: 1.4rem;
+    }
+    .why-we-img img {
+        width: 95%;
+        height: 450px;
+        max-height: 700px;
+        max-width: 500px;
+    }
+    .why-we-advantages {
+        display: grid;
+        margin-top: 40px;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 5px;
+        grid-row-gap: 30px;
+    }
     .feedback-form_top input {
         width: 300px;
     }
