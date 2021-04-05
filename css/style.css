@@ -176,6 +176,7 @@
 .cases-title img{
     width: 100px;
     height: 5px;
+    cursor: pointer;
 }
 
 .cases-slider{
@@ -192,14 +193,17 @@
     padding-bottom: 30px;
     border-bottom: 1px solid rgba(231, 231, 231, 1);
 }
+.case:nth-child(3){
+    border: none;
+}
 .case:nth-child(2n){
     flex-direction: row-reverse;
 }
 .case img{
-    width: 35%;
+    width: 40%;
 }
 .case-slide-text{
-    width: 60%;
+    width: 55%;
 }
 .case-position, .case-target{
     color: black;
@@ -210,6 +214,22 @@
     font-size: 1rem;
     color: gray;
     margin-top: 15px;
+}
+.slick-dots{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.slick-dots li{
+    width: 50px;
+    height: 5px;
+    background-color: #D0D0D0;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.slick-dots .slick-active{
+    background-color: rgba(121, 121, 121, 1);
 }
 /* ADVANTAGES */
 .advantages-wrapper{
@@ -482,6 +502,36 @@
     .feedback-form_down textarea {
         width: 620px;
     }
+    .cases-slider{
+        width: 85%;
+    }
+    .case {
+        font-family: Montserrat;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        flex-direction: column;
+        border-bottom: 1px solid rgba(231, 231, 231, 1);
+    }
+    .case:nth-child(2n){
+        font-family: Montserrat;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        flex-direction: column;
+        border-bottom: 1px solid rgba(231, 231, 231, 1);
+    }
+    .case img{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .case-slide-text{
+        width: 100%;
+    }
 
 }
 @media (max-width: 768px) {
@@ -533,6 +583,12 @@
          height: auto;
         max-height: 700px;
         max-width: 500px;
+    }
+    .cases-title {
+        width: 250px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
     }
 }
 @media (max-width: 640px) {
